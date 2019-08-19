@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700');
+
+body {
+    font-family: "Calson", sans-serif;
+}
+
+
+/* ------------------------Button/Download--------------------*/
+
+.btn {
+    font: 16px "Oswald", sans-serif;
+    color: #BBB2C2;
+    margin: 20px 0px;
+    padding: 10px 15px;
+    border: 2px solid #bead74;
+    display: inline-block;
+}
+
+/*---------------------HOMEPAGE--------------------*/
+
+.homepage-container {
+    height: 100vh;
+    background: url(../images/logof.jpg) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    
+}
+
+/*---------------------------------Navbar ------------*/
+
+
+.navbar-light .navbar-toggler {
+    color: #483146;
+    border-color: #462c44;
+}
+
+.navbar-collapse {
+    text-align: right;
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    margin-top: 7px;
+}
+
+.navbar-nav {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.navbar-collapse a {
+    color: #3d2b40;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+.navbar-toggler {
+    padding: 5px 10px;
+    float: right;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+/*--------------------JUMBOTRON--------------------*/
+.homepage-container .jumbotron{
+    max-width: 100%;
+}
+
+.jumbotron {
+    background-color: transparent;
+    margin-top: 300px;
+}
+
+.header {
+    color: #3e2832;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.header .name {
+    font-family: "Oswald", sans-serif;
+}
+
+.title {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #4f3943;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #4f3943;
+    color: #4f3943;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+
+
+
+
+
+button {}
+
+.aboutme-container {}
+
+.skills-container {}
+
+.experience-container {}
+
+
+.contact-container {}
+
+
+
+
+
+
+
+
+
+
+/*
+.logo{
+    background: url(../images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+}
+.menucontainer{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgba(105,52,102,1.3);
+  overflow-x: hidden;
+  padding-top: 250px;
+    
+}
+
+.menuitem {
+  padding: 6px 6px 6px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #e5c54b;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+*/
