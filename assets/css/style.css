@@ -16,75 +16,38 @@ body {
     display: inline-block;
 }
 
-/*---------------------HOMEPAGE--------------------*/
+/*---------------------HOMEPAGE/JUMBOTRON--------------------*/
 
 .homepage-container {
     height: 100vh;
-    background: url(../images/logof.jpg) no-repeat bottom right fixed;
+    background: url(../images/logo1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: relative;
-    
-}
 
-/*---------------------------------Navbar ------------*/
-
-
-.navbar-light .navbar-toggler {
-    color: #483146;
-    border-color: #462c44;
-}
-
-.navbar-collapse {
-    text-align: right;
-    display: block;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: transparent;
-    margin-top: 7px;
-}
-
-.navbar-nav {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.navbar-collapse a {
-    color: #3d2b40;
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.navbar-toggler {
-    padding: 5px 10px;
-    float: right;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
 
-
-/*--------------------JUMBOTRON--------------------*/
-.homepage-container .jumbotron{
-    max-width: 100%;
-}
+/*------------------------Jumbotron ---------------------*/
 
 .jumbotron {
     background-color: transparent;
-    margin-top: 300px;
+    margin-bottom: 0px;
+    padding: 150px 700px 50px 0;
 }
 
 .header {
     color: #3e2832;
     font-size: 45px;
     font-weight: 300;
+    margin-bottom: 30px;
 }
+
 
 .header .name {
     font-family: "Oswald", sans-serif;
@@ -105,11 +68,120 @@ body {
     padding: 15px 0;
 }
 
+/*   
+
+     
+
+*/
+
+.title {}
+
+/*   border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #4f3943;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #4f3943;  
+    
+}
+*/
+
+/*---------------------------------Navbar ------------*/
+
+.navbar-menu {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    color: rgb(39, 25, 43);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+    color: #4f3943;
+
+}
+
+.fa-home{
+    color:rgb(39, 25, 43);
+}
+
+/*-----------For mobile ------------*/
+
+.navbar-collapse {
+    text-align: right;
+    display: block;
+}
 
 
 
+/*.navbar-container .navbar-fixed-top{
+    max-width:100%;
+    margin-right:1%;
+    margin-top: 1%;
+}
 
-button {}
+.navbar-fixed-top{
+    position:fixed;
+    right:0;
+    left:0;
+    
+}
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  padding-right: 50px;
+}
+
+    .navbar-light .navbar-toggler {
+        color: #483146;
+        border-color: #462c44;
+    }
+
+
+    .navbar-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+    }
+
+
+    .navbar-collapse {
+        text-align: right;
+        display: block;
+    }
+
+/*
+    .navbar-nav {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        float: right!important;
+    }
+
+    a {
+        color: #3d2b40;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+
+    .navbar-nav li a:hover {
+        color: #564F6F;
+    }
+
+
+
+*/
 
 .aboutme-container {}
 
@@ -121,13 +193,7 @@ button {}
 .contact-container {}
 
 
-
-
-
-
-
-
-
+/*------------------ MEDIA QUERRIES--------------*/
 
 /*
 .logo{
