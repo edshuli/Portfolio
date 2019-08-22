@@ -3,6 +3,7 @@
 body {
     font-family: "Merriweather", sans-serif;
     background-color: #a9909d;
+    width:100%;
 }
 
 
@@ -176,12 +177,49 @@ ul{
 
 /*------------------ MEDIA QUERRIES--------------*/
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .homepage-container {
         background-attachment: scroll;
+        background-image: none;
     }
+
+   .container-fluid{
+       font-size:10px;
+   }
+   
+   .jumbotron {
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding: 150px 0px 50px 0;
+}
+  .navbar-toggler {
+    line-height: 1;
+    background-color: #f8f9fa7a;
+    border: 1px solid #fafaf8;
+    border-radius: 0.1rem;
+  }
+  
+  .header {
+    font-size: 30px;
+    font-weight: 300;
 }
 
+.title{
+    font-size: 15px;    
+}
+}
+
+@media (min-width: 576px) and (max-width:768px){
+    .homepage-container {
+        background-attachment: scroll;
+        background-image:none;
+    }
+    
+    .jumbotron {
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding: 150px 0px 50px 0;
+}
 /*
 @media (min-width:768px){
     .jumbotron{
