@@ -148,20 +148,6 @@ h2 {
 
 /*--------------------------ABOUT ME-------------------*/
 
-/*.aboutme-container {
-     height: 100vh;
-    background: url(../images/aboutmelogos/logo-aboutme.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}*/
-
-.aboutme {
-    width: 100vw;
-
-}
-
 a {
     text-decoration: none;
     color: #3f2440;
@@ -185,13 +171,14 @@ ul {
 /*--------------------------------------SKILLS --------*/
 
 .skills {
-    height: 100vh;
+    width: 100vw;
     background: url(../images/skillslogo/logo3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-color: rgba(225, 225, 225, 0.28);
+    position: relative;
 }
 
 .skills-item-container {
@@ -228,15 +215,15 @@ ul {
     height: 20px;
 }
 
+
+.progress span {}
+
+
 h3 {
     font-size: 20px;
     font-weight: bold;
     color: #3f2440;
 }
-
-
-.experience-container {}
-
 
 .contact-container {}
 
@@ -284,7 +271,6 @@ h3 {
 
 @media (max-width: 768px) {
     .homepage-container {
-        background-attachment: scroll;
         background: url(../images/logo2.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -301,8 +287,8 @@ h3 {
     }
 
     .skill-item-desc {
-        font-weight: 200;
-        font-size: bold;
+        font-weight: bold;
+        
     }
 
     .progress-item {
@@ -312,7 +298,7 @@ h3 {
 
 
 
-@media (min-width: 768px) and (max-width:1024px) {
+/*@media (min-width: 768px) and (max-width:1024px) {
     .skills-item-container {
         margin-top: 35px;
         
@@ -338,4 +324,4 @@ h3 {
        padding: 3px 30px 10px 5px;
        height:28px;
    }
-}
+}*/
