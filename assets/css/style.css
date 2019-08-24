@@ -157,9 +157,9 @@ h2 {
     background-size: cover;
 }*/
 
-.aboutme{
-    width:100vw;
-    
+.aboutme {
+    width: 100vw;
+
 }
 
 a {
@@ -183,8 +183,9 @@ ul {
 
 
 /*--------------------------------------SKILLS --------*/
+
 .skills {
-     height: 100vh;
+    height: 100vh;
     background: url(../images/skillslogo/logo3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -193,20 +194,21 @@ ul {
     background-color: rgba(225, 225, 225, 0.28);
 }
 
-.skills-item-container{
-    margin-top:10px;
-   /* background-color: rgba(225, 225, 225, 0.28);*/
-   margin-bottom: 30px
+.skills-item-container {
+    margin-top: 10px;
+    /* background-color: rgba(225, 225, 225, 0.28);*/
+    margin-bottom: 30px
 }
 
 .skill-item-desc {
     font-weight: 200;
     color: #3f2440;
-   /* margin:0 0 0 90px;*/
+    /* margin:0 0 0 90px;*/
 }
 
 .progress {
-    background-color:rgba(90, 77, 89, 0.51); /*rgba(90, 77, 89, 0.75);*/
+    background-color: rgba(90, 77, 89, 0.51);
+    /*rgba(90, 77, 89, 0.75);*/
     border-radius: 10px;
     margin-bottom: 10px;
     height: 20px;
@@ -215,21 +217,23 @@ ul {
 .progress-bar {
     background-color: #d1be76;
 }
- .progress-item{
-     position:absolute;
-     font-weight: 200;
+
+.progress-item {
+    position: absolute;
+    font-weight: 200;
     padding: 3px 30px 2px 10px;
     color: #3f2440;
     background-color: rgba(25, 25, 25, 0.2);
-    border-radius:10px;
-   height: 20px;
+    border-radius: 10px;
+    height: 20px;
 }
-h3{
+
+h3 {
     font-size: 20px;
     font-weight: bold;
     color: #3f2440;
 }
-    
+
 
 .experience-container {}
 
@@ -239,8 +243,10 @@ h3{
 
 /*------------------ MEDIA QUERRIES--------------*/
 
+/*------------------ HOMEPAGE ------------------*/
+
 @media (max-width: 576px) {
-    
+
     .container-fluid {
         font-size: 10px;
     }
@@ -285,4 +291,51 @@ h3{
         -o-background-size: cover;
         background-size: cover;
     }
+}
+
+/*------------------ SKILLS    ------------------*/
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .skill-item-desc {
+        font-weight: 200;
+        font-size: bold;
+    }
+
+    .progress-item {
+        font-weight: bold;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .skills-item-container {
+        margin-top: 35px;
+        
+        margin-bottom: 50px
+    }
+   .progress{
+       margin-bottom: 20px;
+       height:30px;
+   }
+   
+   h3{
+       padding-bottom: 35px;
+       font-size:30px;
+   }
+   
+   .skill-item-desc{
+       font-weight:bold;
+       font-size:20px;
+   }
+   
+   .progress-item{
+       font-size:20px;
+       padding: 3px 30px 10px 5px;
+       height:28px;
+   }
 }
