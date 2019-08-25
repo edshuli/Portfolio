@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Edna Shuli - Full Stack Web Developer</title>
@@ -19,19 +19,18 @@
             <div class="col-12">
                 <!-- NAVBAR -->
                 <nav class="navbar navbar-expand-sm fixed-top navbar-light ">
-                    <a href="index.html" class="navbar-brand"><i class="fa fa-home" aria-hidden="true"></i>Ed.Sh</a>
+                    <a href="index.html" class="navbar-brand">Ed.Sh</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
        </button>
 
                     <div id="menuDropdown" class="navbar-collapse collapse">
                         <ul class="navbar-nav mr-auto">
-                            <li><a class="nav-link text-uppercase" href="#">about</a></li>
-                            <li><a class="nav-link text-uppercase" href="#">skills</a></li>
-                            <li><a class="nav-link text-uppercase" href="#">work</a></li>
-                            <li><a class="nav-link text-uppercase" href="#">education</a></li>
-                            <li><a class="nav-link text-uppercase" href="#">contact</a></li>
-                            <li><a class="nav-link text-uppercase" href="#">cv</a></li>
+                            <li><a class="nav-link text-uppercase" href="#about">about</a></li>
+                            <li><a class="nav-link text-uppercase" href="#skills">skills</a></li>
+                            <li><a class="nav-link text-uppercase" href="#experience">experience</a></li>
+                            <li><a class="nav-link text-uppercase" href="#contact">contact</a></li>
+                            <li><a class="nav-link text-uppercase" target="_blank" href="assets/cv/Edna-Shuli-Curriculum-Vitae.pdf">cv</a></li>
                         </ul>
                     </div>
             </div>
@@ -53,10 +52,10 @@
 
 
     <!-- ABOUT ME -->
-    <section class="aboutme">
+    <section class="aboutme" id="about">
         <div class="container aboutme-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 personalinfo-container">
                     <div class="personal-info">
                         <h2 class="uppercase">Personal Info</h2>
                         <hr class="title-divider">
@@ -68,12 +67,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 about-container">
                     <h2 class="text-uppercase">About</h2>
                     <hr class="title-divider">
-                    <div class="aboutmeitem">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                            nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+                    <div class="aboutitem">
+                        <p>Hello there, I am Edna Shuli currently studying Full Stack Development at Code Institute.
                         </p>
                     </div>
                     <button class="btn">Download CV!</button>
@@ -86,7 +84,7 @@
 
     <!-- Skills -->
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container skills-container">
             <div class="row">
                 <div class="col">
@@ -152,14 +150,14 @@
                             </div>
                             <span class="progress-item">Greek</span>
                         </div>
-                        
+
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="99.5" aria-valuemin="0" aria-valuemax="100" style="width:99.5%">
                                 <span class="sr-only">99.5% complete</span>
                             </div>
                             <span class="progress-item">Albanian</span>
                         </div>
-                        
+
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
                                 <span class="sr-only">50% complete</span>
@@ -174,44 +172,110 @@
 
 
 
-    <!-- Experience -->
-    <div class="container experience-container">
-        <section class="experience">
-            <h2 class="text-uppercase">Experience</h2>
-            <hr class="title-divider">
-            <div class="work-history">
-                <p>A diagramm of my working experience</p>
+    <!-- Experience/Education -->
+    <section class="info" id="experience">
+        <div class="container container-info">
+            <div class="row">
+                <div class="col-md-6 experience-container">
+                    <h2 class="text-uppercase history-heading">Experience</h2>
+                    <hr class="title-divider">
+                    <div class="history-items">
+                        <div class="timeline-item" data-dates="10/2011 - 03/2013">
+                            <h7>Mark One Store</h7>
+                            <p>Sales Representative</p>
+                        </div>
+                        <div class="timeline-item" data-dates="09/2013 - 11/2014">
+                            <h7>Altec Intergation, SA</h7>
+                            <p>IT Help Desk</p>
+                        </div>
+                        <div class="timeline-item" data-dates="01/2015 – 9/2017">
+                            <h7>Clap The Restaurant</h7>
+                            <p>Event Coordinator</p>
+                        </div>
+                        <div class="timeline-item" data-dates="12/2017 - 08/2018">
+                            <h7>Ikaros Travel</h7>
+                            <p>Travel Manager</p>
+                        </div>
+                        <div class="timeline-item" data-dates="09/2018  - 05/2019">
+                            <h7>Double Tree by Hilton</h7>
+                            <p>Supervisor Meetings and Events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 education-container">
+                    <h2 class="text-uppercase edu-heading">Education</h2>
+                    <hr class="title-divider">
+                    <div class="edu-history">
+                        <div class="timeline-item" data-dates="2010 - 2014">
+                            <h7>Technological Educational Institute of Chalkis </h7>
+                            <p>Automation and IT Engineer</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2017 - 2018">
+                            <h7>Ashdown Academy</h7>
+                            <p>Event Managment/ Communication and Marketing</p>
+                        </div>
+                        <div class="timeline-item" data-dates="2019 - present">
+                            <h7>Code Institute</h7>
+                            <p>Full Stack Web Developer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
 
 
 
     <!-- Contact -->
-    <div class="container contact-container">
-        <section class="contact">
-            <h2 class="text-uppercase">Contact</h2>
-            <hr class="title-divider">
-            <div class="contact-info">
-                <p>Do you want to work together? Then hurry up and send me an email!!!</p>
+    <section class="contact" id="contact">
+        <div class="container contact-container ">
+            <div class="row contact-form">
+                <div class="col position-contact">
+                    <h2 class="text-uppercase contac-header">Contact</h2>
+                    <hr class="title-divider">
+                    <p class="contact-text">Do you want to work together? Then hurry up and send me an email!!!</p>
+                    <div class="center-form">
+                        <form>
+                            <div class="contact-item">
+                                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                            </div>
+                            <div class="contact-item">
+                                <input type="text" name="phone" id="phonenumber" class="form-control" placeholder="Phone" required />
+                            </div>
+                            <div class="contact-item">
+                                <input type="text" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
+                            </div>
+                            <div class="contact-item">
+                                <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button class="btn">READY? GO!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-
-    <!-- Download 
-        <section class="downloadcv">
-           <button class="btn">Download CV!</button
-        </section>
-       -->
     <footer>
-
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-xs-12 col-xs-12 icons">
+                            <a href="assets/cv/Edna-Shuli-Curriculum-Vitae.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            <a href="www.linkedin.com/in/edna-shuli-49142888" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://github.com/edshuli" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/dido_edna/?hl=el" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 </body>
 
 

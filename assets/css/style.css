@@ -2,9 +2,11 @@
 
 body {
     font-family: "Merriweather", sans-serif;
-    background-color: #a9909d;
-    width: 100%;
+    background-color: rgba(169, 144, 157, 0.42);
+    font-weight: 400;
 }
+
+
 
 
 /* ------------------------Button/Download--------------------*/
@@ -22,7 +24,7 @@ body {
 
 .homepage-container {
     height: 100vh;
-    background: url(../images/logo1.jpg) no-repeat center center fixed;
+    background: url(../images/img-homepage.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -94,16 +96,33 @@ span {
 .navbar-light .navbar-brand {
     letter-spacing: 1px;
     color: #d1be7b;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 
 }
 
+.navbar-light .navbar-brand:hover {
+    color: #fafafa;
+}
+
 .navbar .navbar-nav a {
-    font-weight: bold;
+    font-weight: 400;
     color: #d1be7b;
     letter-spacing: 1px;
     text-decoration: none;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fafafa;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -133,10 +152,11 @@ span {
 /*----------------------------TITLES/HEADERS----------------------------*/
 
 h2 {
-    font-family: "Nanum+Gothic", sans-serif;
+    font-family: "Merriweather", sans-serif;
     color: #3f2440;
     background-color: transparent;
     margin-top: 20px;
+    letter-spacing: 2px;
 }
 
 .title-divider {
@@ -147,6 +167,27 @@ h2 {
 }
 
 /*--------------------------ABOUT ME-------------------*/
+
+.aboutme {
+    width: 100vw;
+    background: url(../images/aboutmelogo/imgabout.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #f6f4f5;
+    position: relative;
+
+}
+
+.personalinfo-container,
+.about-container {
+    background-color: rgba(250, 250, 250, 0.69);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
 
 a {
     text-decoration: none;
@@ -172,31 +213,28 @@ ul {
 
 .skills {
     width: 100vw;
-    background: url(../images/skillslogo/logo3.jpg) no-repeat center center fixed;
+    background: url(../images/skillslogo/image-skills.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: rgba(225, 225, 225, 0.28);
     position: relative;
 }
 
+
 .skills-item-container {
     margin-top: 10px;
-    /* background-color: rgba(225, 225, 225, 0.28);*/
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 .skill-item-desc {
     font-weight: 200;
     color: #3f2440;
-    /* margin:0 0 0 90px;*/
 }
 
 .progress {
     background-color: rgba(90, 77, 89, 0.51);
-    /*rgba(90, 77, 89, 0.75);*/
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     height: 20px;
 }
@@ -216,23 +254,132 @@ ul {
 }
 
 
-.progress span {}
-
-
 h3 {
     font-size: 20px;
     font-weight: bold;
     color: #3f2440;
 }
 
-.contact-container {}
+/*-------------------- EXPERIENCE-EDUCATION---------------*/
 
+.info {
+    width: 100vw;
+    background: url(../images/experience-logo/expimg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.experience-container,
+.education-container {
+    background-color: rgba(250, 250, 250, 0.69);
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.timeline-item {
+    padding: 1em 2em 0em 2em;
+    position: relative;
+    color: #3f2440;
+    font-weight: 500;
+    border-left: 2px solid #d1be76;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: -4em;
+    right: 2.5em;
+    position: relative;
+    border-radius: 50%;
+    content: '';
+    background: #d1be76;
+}
+
+/*---------------------CONCTACT-----------------*/
+
+.contact {
+    width: 100vw;
+    background: url(../images/contact-logo/contact-img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.position-contact {
+    background-color: #fafafa36;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.contact-text {
+    color: #3f2440;
+}
+
+.contact-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #d1be76;
+    border-radius: .50em;
+    margin-bottom: 5px;
+}
+
+/*-------------------FOOTER----------------------*/
+
+footer {
+
+    margin: 0;
+    background-color: rgba(250, 250, 250, 0.28);
+    border-color: transparent;
+}
+
+i {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    padding-top: 12.5px;
+    background-color: #d1be7b;
+    margin: 10px 0 10px 10px;
+}
+
+i:hover {
+    color: #564F6F;
+
+}
 
 /*------------------ MEDIA QUERRIES--------------*/
 
 /*------------------ HOMEPAGE ------------------*/
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     .container-fluid {
         font-size: 10px;
@@ -241,7 +388,7 @@ h3 {
     .jumbotron {
         background-color: transparent;
         margin-bottom: 0px;
-        padding: 150px 0px 50px 0;
+        padding: 5px 0px 100px 0;
     }
     .navbar-toggler {
         line-height: 1;
@@ -265,13 +412,13 @@ h3 {
     .jumbotron {
         background-color: transparent;
         margin-bottom: 0px;
-        padding: 150px 0px 50px 0;
+        padding: 5px 0px 100px 0;
     }
 }
 
 @media (max-width: 768px) {
     .homepage-container {
-        background: url(../images/logo2.jpg) no-repeat center center fixed;
+        background: url(../images/image.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -288,13 +435,51 @@ h3 {
 
     .skill-item-desc {
         font-weight: bold;
-        
+
     }
 
     .progress-item {
         font-weight: bold;
     }
+
+
 }
+
+@media (max-width: 767px) {
+    .skills {
+        background-image: none;
+        background-color: rgba(250, 250, 250, 0.69);
+    }
+
+    .personalinfo-container {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .about-container {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .experience-container {
+        padding-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    .education-container {
+        padding-bottom: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+    }
+
+
+}
+
+
+
 
 
 
