@@ -37,7 +37,7 @@ body {
 
 
 
-/*------------------------Jumbotron ---------------------*/
+/*------------------------JUMBOTRON ---------------------*/
 
 .jumbotron {
     background-color: transparent;
@@ -78,7 +78,7 @@ span {
 }
 
 
-/*---------------------------------Navbar ------------*/
+/*---------------------------------NAVBAR ------------*/
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.55);
@@ -129,13 +129,8 @@ span {
     color: #d1be7b;
 }
 
-.fa-home {
-    color: #d1be7b;
-}
 
-
-
-/*-----------For mobile ------------*/
+/*-----------NAVBAR - MOBILE VERSION ------------*/
 
 .navbar-collapse {
     text-align: right;
@@ -166,7 +161,7 @@ h2 {
     margin: 0 0 20px 0;
 }
 
-/*--------------------------ABOUT ME-------------------*/
+/*--------------------------ABOUT -------------------*/
 
 .aboutme {
     width: 100vw;
@@ -377,6 +372,7 @@ i:hover {
 
 /*------------------ MEDIA QUERRIES--------------*/
 
+
 /*------------------ HOMEPAGE ------------------*/
 
 @media (max-width: 575px) {
@@ -474,45 +470,6 @@ i:hover {
 
     .contact {
         background-image: none;
-
     }
 
 }
-
-/*@media (max-width: 767px) {
-    .homepage-container {
-        background: url(../images/image.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}*/
-
-/*@media (min-width: 768px) and (max-width:1024px) {
-    .skills-item-container {
-        margin-top: 35px;
-        
-        margin-bottom: 50px
-    }
-   .progress{
-       margin-bottom: 20px;
-       height:30px;
-   }
-   
-   h3{
-       padding-bottom: 35px;
-       font-size:30px;
-   }
-   
-   .skill-item-desc{
-       font-weight:bold;
-       font-size:20px;
-   }
-   
-   .progress-item{
-       font-size:20px;
-       padding: 3px 30px 10px 5px;
-       height:28px;
-   }
-}*/
