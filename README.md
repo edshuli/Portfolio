@@ -37,3 +37,12 @@ I also would like to add more projects on my portfolio and make somme changes on
 ## Testing
 
 
+
+### Navbar Menu
+
+If you click on any of the sections, you will be directed to your prefered one 
+
+### Links
+
+Using the 'target="_blank"' all links will open in a new tab and the CV will be dowloaded to your default folder for downloads. 
+All links have been manually tested to make sure that they are pointing to the correct destination.
