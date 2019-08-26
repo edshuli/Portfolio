@@ -81,7 +81,7 @@ span {
 /*---------------------------------Navbar ------------*/
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.55);
     overflow: hidden;
     position: fixed;
 
@@ -170,7 +170,7 @@ h2 {
 
 .aboutme {
     width: 100vw;
-    background: url(../images/aboutmelogo/imgabout.jpg) no-repeat center center fixed;
+    background: url(../images/aboutmelogo/imgabout.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -213,7 +213,7 @@ ul {
 
 .skills {
     width: 100vw;
-    background: url(../images/skillslogo/image-skills.jpg) no-repeat center center fixed;
+    background: url(../images/skillslogo/image-skills.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -264,7 +264,7 @@ h3 {
 
 .info {
     width: 100vw;
-    background: url(../images/experience-logo/expimg.jpg) no-repeat center center fixed;
+    background: url(../images/experience-logo/expimg.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -323,7 +323,7 @@ h3 {
 
 .contact {
     width: 100vw;
-    background: url(../images/contact-logo/contact-img.jpg) no-repeat center center fixed;
+    background: url(../images/contact-logo/contact-img.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -417,12 +417,8 @@ i:hover {
 }
 
 @media (max-width: 768px) {
-    .homepage-container {
-        background: url(../images/image.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .info {
+        background-image: none;
     }
 }
 
@@ -476,12 +472,22 @@ i:hover {
     }
 
 
+    .contact {
+        background-image: none;
+
+    }
+
 }
 
-
-
-
-
+/*@media (max-width: 767px) {
+    .homepage-container {
+        background: url(../images/image.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}*/
 
 /*@media (min-width: 768px) and (max-width:1024px) {
     .skills-item-container {
